@@ -23,12 +23,19 @@ auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 x = tweepy.API(auth)
 x.update_status('Publique mi primer tweet ')
 
-#encender puertos GPIO
-print "Lights on"
+#Turn LEDs on
 GPIO.output(17,GPIO.HIGH)
-GPIO.output(27,GPIO.HIGH) 
-
-#apagar puertos GPIO
-print "Lights off"
+GPIO.output(27,GPIO.HIGH)
+time.sleep(1)
+#Turn LEDs off
 GPIO.output(17,GPIO.LOW)
 GPIO.output(27,GPIO.LOW)
+time.sleep(1)
+#Turn LEDs on
+GPIO.output(17,GPIO.HIGH)
+GPIO.output(27,GPIO.HIGH)
+time.sleep(1)
+#Turn LEDs off
+GPIO.output(17,GPIO.LOW)
+GPIO.output(27,GPIO.LOW)
+GPIO.cleanup
