@@ -107,4 +107,4 @@ while True:#ciclo infinito
                                 print("Sistema activo")
                                 control = comando
 								
-    time.sleep(5) #leera el ultimo tweet cada 5 segundos
+    time.sleep(3) #leera el ultimo tweet cada 3 segundos, se puede modificar el tiempo de espera de lectura de tweets
